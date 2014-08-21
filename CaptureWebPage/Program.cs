@@ -2,6 +2,8 @@
 {
     class Program
     {
+        // http://stackoverflow.com/questions/17908452/c-sharp-webbrowser-control-doesnt-work-in-ie-10-after-emulation
+        // This is the URL to configure WebControl with a specific IE version
         static void Main(string[] args)
         {
             //Thread.CurrentThread.SetApartmentState(ApartmentState.STA);
@@ -16,7 +18,9 @@
             //websiteToImage.Generate();
             //WebsiteToImage websiteToImage = new WebsiteToImage("https://github.com/jdavis?tab=repositories", @"Test3.jpg");
             //websiteToImage.Generate();
-            WebsiteToImage websiteToImage = new WebsiteToImage("http://www.bbc.co.uk/vietnamese/world/2014/08/140817_ukraine_russian_aid_arrives.shtml", @"Test4.jpg");
+            //WebsiteToImage websiteToImage = new WebsiteToImage("http://www.bbc.co.uk/vietnamese/world/2014/08/140817_ukraine_russian_aid_arrives.shtml", @"Test4.jpg");
+            //websiteToImage.Generate();
+            WebsiteToImage websiteToImage = new WebsiteToImage("http://stackoverflow.com/questions/17908452/c-sharp-webbrowser-control-doesnt-work-in-ie-10-after-emulation", @"Test6.jpg");
             websiteToImage.Generate();
         }
     }

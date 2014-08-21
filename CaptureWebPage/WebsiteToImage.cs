@@ -37,7 +37,11 @@ namespace CaptureWebPage
 
         private void _Generate()
         {
-            var browser = new WebBrowser { ScrollBarsEnabled = false };
+            var browser = new WebBrowser
+                          {
+                              ScrollBarsEnabled = false,
+                              //ScriptErrorsSuppressed = true,
+                          };
             browser.Navigate(m_Url);
             browser.DocumentCompleted += WebBrowser_DocumentCompleted;
 
